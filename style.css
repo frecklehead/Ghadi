@@ -8,7 +8,7 @@
 .hero{
     width:100%;
     min-height: 100vh;
-    background: linear-gradient(45deg,#230f49,#150720);
+    background: linear-gradient(45deg,#5ef799,#c591ec);
     color:#ffff;
 
 }
@@ -27,34 +27,39 @@
 .clock{
     width:100%;
     height:100%;
-    background: #d4af27;;
+   
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
- backdrop-filter:blur(10px);
+background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255,255,255,0.18);
+box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 
 
 }
 
 .container::before{
     content:'';
-    width:180px;
-    height:180px;
-    background-color:#C8CBD4 ;
-    border-radius: 5px;
+    width:110px;
+    height:110px;
+    background:linear-gradient(#6c8ef7,#ffff) ;
+    border-radius: 50%;
     position:absolute;
-    left: -50px;
-    top: -50px;
+    left: -60px;
+    bottom: -70px;
     z-index:-1;
 
     
 }
 .container::after{
     content:'';
-    width:180px;
-    height:180px;
-    background-color:#f52c57 ;
+    width:150px;
+    height:150px;
+    background:linear-gradient(#ee3838,#ffff) ;
     border-radius: 50%;
     position:absolute;
     right: -100px;
